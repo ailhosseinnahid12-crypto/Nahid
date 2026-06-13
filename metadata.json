@@ -1,0 +1,6 @@
+{
+  "name": "CashHive",
+  "description": "A beautiful and interactive micro-task earning platform featuring microtasks, video ads, referral systems, and instant withdraw options.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

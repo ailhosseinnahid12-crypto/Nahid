@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Mono&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Fira Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom styles and smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.4);
+}
+
+@keyframes float-money {
+  0% {
+    transform: translateY(110vh) rotate(0deg) translateX(0);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(50vh) rotate(180deg) translateX(25px);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-10vh) rotate(360deg) translateX(-10px);
+    opacity: 0;
+  }
+}
+
+.float-item {
+  position: absolute;
+  bottom: -20px;
+  animation: float-money 15s linear infinite;
+  pointer-events: none;
+  z-index: 10;
+}
+
